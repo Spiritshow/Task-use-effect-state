@@ -10,7 +10,6 @@ const Conteiner = () => {
     const [prop, setProp] = useState({name: RandomName()});
 
     const tick = () => {
-        console.log("try");
         setProp({name: RandomName()})
     }
 
