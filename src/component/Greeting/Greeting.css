@@ -1,6 +1,10 @@
 .greetingBox{
     display: flex;
     align-self: center;
-    margin: 8px;
-    border-radius: 45%;
+    background-color: rgb(113, 116, 119);
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 14px;
 }

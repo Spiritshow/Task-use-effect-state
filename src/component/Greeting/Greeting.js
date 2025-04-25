@@ -1,5 +1,6 @@
 import React from "react";
 import Text from "./Text/Text";
+import "./Greeting.css";
 
 const Greeting = ({prop}) => {
 

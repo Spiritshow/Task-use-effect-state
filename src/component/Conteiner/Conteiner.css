@@ -1,5 +1,8 @@
 .customConteiner{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(69, 69, 69);
     height: 100%;
     width: 100%;
+    align-items: center;
 }

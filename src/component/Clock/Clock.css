@@ -1,5 +1,8 @@
 .timeBox{
     margin: 7px;
+    background-color: rgb(101, 104, 107);
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius: 12px;
 }
 
