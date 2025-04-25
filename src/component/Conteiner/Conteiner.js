@@ -25,7 +25,11 @@ const Conteiner = () => {
         <div className="customConteiner">
             <Header/>
             <Greeting prop={prop}/>
-            <Clock/>
+            <div className="timeZoneBox">
+                <Clock prop={{country: "Moscow"}}/>
+                <Clock prop={{country: "Tyumen"}}/>
+                <Clock prop={{country: "Tokyo"}}/>
+            </div>
         </div>
     )
 }
