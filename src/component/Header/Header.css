@@ -1,0 +1,18 @@
+
+.headerBox{
+ width: 100%;
+ height: auto;
+ background-color: rgb(43, 43, 43);
+}
+
+.text{
+ text-align: center;
+}
+
+.mainText{
+ color:rgb(206, 219, 219);
+}
+
+.subText{
+ color: rgb(163, 174, 174);
+}
