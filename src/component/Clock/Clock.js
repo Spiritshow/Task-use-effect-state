@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "./Clock.css";
 
-const Clock = () => {
+const timeZones = {
+    "Moscow":"Europe/Moscow",
+    "Tokyo":"Asia/Tokyo",
+    "Tyumen":"Asia/Yekaterinburg"
+};
+
+const Clock = ({prop}) => {
     const [togle, setTogle] = useState(false);
     const [time, setTime] = useState(new Date());
+    const timeZone = timeZones[prop.country];
+    const minutes = time.getMinutes();
 
     const tick = () => {
         setTime(new Date());
     }
 
     useEffect( () => {
-        console.log(time.getMinutes()%5);
-        if(time.getMinutes()%5 == 0) {setTogle(true)}
+        if(minutes%5 === 0) {setTogle(true)}
             else {setTogle(false)};
-    },[time.getMinutes()])
+    },[minutes])
 
     useEffect( () => {
         const timer = setInterval(() => tick(), 1000);
@@ -23,8 +30,9 @@ const Clock = () => {
 
     return(
         <div className="timeBox">
-            <h1 className="timeText">{time.toLocaleTimeString()}</h1>
-            {togle && <h3>Время {time.getHours}:{time.getMinutes}  делится на 5</h3>}
+            <h2 className="timeText">{prop.country}</h2>
+            <h1 className="timeText">{time.toLocaleTimeString("ru-RU",{timeZone, hour: '2-digit', minute:'2-digit', second: '2-digit'})}</h1>
+            {togle && <h3>Время делится на 5</h3>}
         </div>
     )
 }

@@ -4,10 +4,13 @@ import RandomName from "./RandomName/RandomeName";
 import Header from "../Header/Header";
 import Greeting from "../Greeting/Greeting";
 import Clock from "../Clock/Clock";
+import NaynCat from "../naynCat/naynCat";
+import CountClick from "../CountClick/CountClick";
 
 const Conteiner = () => {
 
     const [prop, setProp] = useState({name: RandomName()});
+    const [toggler, setToggler] = useState(false);
 
     const tick = () => {
         setProp({name: RandomName()})
@@ -24,8 +27,14 @@ const Conteiner = () => {
     return(
         <div className="customConteiner">
             <Header/>
+            <CountClick onToggle={setToggler}/>
             <Greeting prop={prop}/>
-            <Clock/>
+            <NaynCat toggler={toggler}/>
+            <div className="timeZoneBox">
+                <Clock prop={{country: "Moscow"}}/>
+                <Clock prop={{country: "Tyumen"}}/>
+                <Clock prop={{country: "Tokyo"}}/>
+            </div>
         </div>
     )
 }

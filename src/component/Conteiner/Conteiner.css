@@ -6,3 +6,9 @@
     width: 100%;
     align-items: center;
 }
+
+.timeZoneBox{
+    display: flex;
+    flex-direction: row;
+    
+}
