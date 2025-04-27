@@ -1,0 +1,19 @@
+.CounterBox{
+    margin: 7px;
+    background-color: rgb(101, 104, 107);
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 12px;
+}
+
+.TextCounter{
+    text-align: center;
+    color: azure;
+}
+
+.ButtonCounter{
+    text-align: center;
+    color: rgb(198, 212, 212);
+    background-color: rgb(55, 57, 58);
+    margin: 7px;
+}

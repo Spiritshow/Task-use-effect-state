@@ -1,0 +1,24 @@
+.NaynCatBox {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+  }
+
+.image{
+    position: absolute;
+    left: -500px;
+}
+
+.Move{
+    animation: flyAcross 3s linear forwards;
+}
+
+@keyframes flyAcross {
+    from {
+      left: -200px; /* начальная позиция за левым краем */
+    }
+    to {
+      left: 100vw; /* полностью улетает за правый край */
+    }
+  }
