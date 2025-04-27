@@ -27,9 +27,9 @@ const Conteiner = () => {
     return(
         <div className="customConteiner">
             <Header/>
+            <CountClick onToggle={setToggler}/>
             <Greeting prop={prop}/>
             <NaynCat toggler={toggler}/>
-            <CountClick onToggle={setToggler}/>
             <div className="timeZoneBox">
                 <Clock prop={{country: "Moscow"}}/>
                 <Clock prop={{country: "Tyumen"}}/>

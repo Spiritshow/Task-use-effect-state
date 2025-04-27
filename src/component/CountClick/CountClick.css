@@ -1,5 +1,5 @@
 .CounterBox{
-    margin: 7px;
+    margin: 25px;
     background-color: rgb(101, 104, 107);
     padding-left: 25px;
     padding-right: 25px;
@@ -7,6 +7,7 @@
 }
 
 .TextCounter{
+    margin: 7px;
     text-align: center;
     color: azure;
 }
